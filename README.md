@@ -1,16 +1,14 @@
 Practica PRO2 Q1 2015/2016
 --------------------------
 DEADLINES
-[]
-[]
-[]
-[]
+[] Empezar especificacion clases
+[] Documentacion Doxygen
 
 --------------------------
 NOTAS
 * Lo ideal para cada commit es poner el dia de modificacion (como es hasta diciembre solo hace falta que sea del formato "[Dia] Comments"). Ejemplo: "[27] Nth commit!". Pero en realidad se puede poner lo que consideremos más relevante
 * El archivo de texto Gitutorial.txt contiene una referencia rápida de GitHub y los comandos esenciales para la práctica.
-* 
+
 * Tenemos, desde hoy dia 19, solo 14 días para pasar de no tener casi nada a completarlo todo. Es MUY importante que nos pongamos deadlines estrictos para cada tarea/clase/implementación/etc, ya que de lo contrario nuestra historia se repetirá este cuadri (y no queremos nada de eso). Tales deadlines:
 * -> Serán siempre pares (trabajo equitativo). Si no lo es posible, el que tenga menos tareas debe trabajar tanto como el que tenga mas (En caso de 3; 1 dificil = 2 medio/faciles)
 * -> Las tareas van asociadas a un miembro de cada práctica: excepto casos ocasionales (y MUY POCOS), los tiene que hacer uno de los miembros, pero el otro siempre puede hacer asistencia.
