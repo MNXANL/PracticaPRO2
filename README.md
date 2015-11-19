@@ -1,8 +1,8 @@
 Practica PRO2 Q1 2015/2016
 --------------------------
 DEADLINES
-[] Empezar especificacion clases
-[] Documentacion Doxygen
+* [] Empezar especificacion clases
+* [] Documentacion Doxygen
 
 --------------------------
 NOTAS
