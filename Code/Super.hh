@@ -38,6 +38,12 @@ public:
 	seqüència òptima de camins que ha de fer el client.
 	*/
 	void Consultar_Best_Path(int &id);
+	
+	/** @brief Operació consultora de producte en el supermercat.
+	*\pre ...
+	*\post ...
+	*/
+	void Consultar_Producte(string &str);
 
 	/** @brief Operacio que afegeix productes al supermercat.
 	*\pre Entren pel p.i. productes
