@@ -2,19 +2,21 @@
 
 
 Super::Super() {
-
+	
 }
 
 void Super::Consultar_Best_Path(int &id) {
-
+	
 }
 
 
-void Super::Afegir_Productes(...){
-
+void Super::Afegir_Productes(){
+	
 }
 
 void Super::Llegir_Super() {
+	char c[] = "XX";
+	cin >> c[0] >>c[1];
 	
 }
 

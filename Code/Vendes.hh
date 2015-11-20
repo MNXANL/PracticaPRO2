@@ -28,10 +28,14 @@ public:
 
 	/*@brief Operació carregadora de dades de vendes.
 	*\pre mida >= 0
-	*\post 
+	*\post S'han carregat dades a un vector de clients de mida MIDA.
 	*/
 	void Carregar_Dades(int& mida);
-
+	
+	/*@brief Operació carregadora de dades de vendes.
+	*\pre mida >= 0
+	*\post 
+	*/
 	string Consultar_Temps_Sec() const;
 	
 	/*@brief Operació que simula el pagament de 
