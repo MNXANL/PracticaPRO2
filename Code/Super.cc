@@ -17,6 +17,7 @@ void Super::Afegir_Productes(){
 void Super::Llegir_Super() {
 	char c[] = "XX";
 	cin >> c[0] >>c[1];
+	int box; cin >>box;
 	
 }
 

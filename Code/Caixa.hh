@@ -18,23 +18,29 @@ class Caixa {
 private:
 	/** @class  Caixa
       @brief Representa una Caixa
-      Un parell de booleans té el tipus de caixa (status.first determina si és obert o tancat, i status.second
-      si és normal o ràpida). Té una cua que marca els clients que es troben a la cua de la caixa. A més, va sumant els
-      temps d'espera dels clients que es troben a la cua.
+      Té una cua que marca els clients que es troben a la cua de la caixa. A més, va sumant 
+      els temps d'espera dels clients que es troben a la cua.
     */
-    queue<Client> waitc; //Clients esperant a Caixa
-    const static int MAX_PROD_RAPID = 10;
-    int sumTemps;
+	queue<Client> waitc; //Clients esperant a Caixa
+	int sumTemps;
+	const static int MAX_PROD_RAPID = 10;
+	
 
 public:
-	/*@brief
-	*\pre
-	*\post
+	/** @brief Constructora per defecte de Caixa
+	*\pre Cert
+	*\post Crea una caixa sense clients i amb la suma de temps de la cua nul.
 	*/
 	Caixa();
-
-	/*@brief Consulta el temps d'espera de la caixa
-	*\pre Hi han clients a la cua WAITC.
+	
+	/** @brief Constructora per defecte de Caixa
+	*\pre Cert
+	*\post Crea una caixa sense clients i amb la suma de temps de la cua nul.
+	*/
+	void afegir_client_cua (Client& c);
+	
+	/** @brief Consulta el temps d'espera de la caixa
+	*\pre Hi han clients a la cua waitc.
 	*\post Retorna el temps d'espera de la cua de la caixa.
 	*/
 	int Consultar_Temps_Espera() const;

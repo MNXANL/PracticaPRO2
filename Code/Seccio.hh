@@ -18,19 +18,19 @@ private:
     list<Producte> lprod;
 
 public:
-	/*@brief Constructora per defecte de la classe 
+	/** @brief Constructora per defecte de la classe 
 	*\pre Cert
-	*\post 
+	*\post Crea una
 	*/
 	Seccio();
 
-	/*@brief Consultora de secció buida
+	/** @brief Consultora de secció buida
 	*\pre Cert
 	*\post Retorna true si la secció és buida; altrament retorna false.
 	*/
 	bool Es_seccio_buida() const;
 
-	/*@brief Operacio escriptora
+	/** @brief Operacio escriptora
 	*\pre LPROD no és buit
 	*\post Escriu pel canal d'entrada estàndar els productes de LPROD.
 	*/
