@@ -20,7 +20,7 @@ NOTAS
 * -> Serán siempre pares (trabajo equitativo). Si no lo es posible, el que tenga menos tareas debe trabajar tanto como el que tenga mas (En caso de 3; 1 dificil = 2 medio/faciles)
 * -> Las tareas van asociadas a un miembro de cada práctica: excepto casos ocasionales (y MUY POCOS), los tiene que hacer uno de los miembros, pero el otro siempre puede hacer asistencia.
 * -> Una vez se completa una, lo ideal es crear otra para compensar la “perdida“, aunque conviene guardar las completadas (como demostracion de la competencia esa y tal).
-* Y lo más importante de todo es aprender, luego hacer un buen trabajo (y por lo tanto sacar buena nota). Pero nada de eso puede venir sin trabajo constante y dedicado :) LET'S JUST DO IT!
+* Y lo más importante de todo es aprender, y naturalmente saldrá un buen proyecto (y por lo tanto sacar buena nota). Pero nada de eso puede venir sin trabajo constante y dedicado :) LET'S JUST DO IT!
 
 
 --------------------------
