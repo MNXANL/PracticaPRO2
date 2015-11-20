@@ -34,5 +34,22 @@ public:
 	*/
 	Caixa();
 
+  /*@brief Consulta el temps d'espera de la caixa
+  *\pre Hi han clients a la cua WAITC.
+  *\post Retorna el temps d'espera de la cua de la caixa.
+  */
+  int Consultar_Temps_Espera();
+
+  /*@brief Consultora de caixa oberta
+  *\pre cert
+  *\post Retorna true si la caixa és oberta
+  */
+  bool es_Oberta() const;
+
+  /*@brief Consultora de caixa ràpida
+  *\pre cert
+  *\post Retorna true si la caixa és ràpida
+  */
+  bool es_Rapida() const;
 };
 #endif
