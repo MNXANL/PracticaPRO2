@@ -3,12 +3,12 @@ Practica PRO2 Q1 2015/2016
 DEADLINES
 * [X] Empezar implementacion clases
 * * [ ] Implementar clases
-* * * [ ] Super
-* * * [ ] Seccio
-* * * [ ] Producte
-* * * [ ] Client
-* * * [ ] Caixa
-* * * [ ] Vendes
+* > [ ] Super
+* > [ ] Seccio
+* > [ ] Producte
+* > [ ] Client
+* > [ ] Caixa
+* > [ ] Vendes
 * [ ] Documentacion Doxygen
 
 --------------------------
