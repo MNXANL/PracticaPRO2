@@ -1,12 +1,12 @@
 #include "Client.hh"
 
-void Llegir_Productes_Client(int &mida) {
+void Client::Llegir_Productes_Client() {
 	//Revisar!
 	list<pair <string, int> >::iterator it;
-	for (it = lprod.begin(); it != lprod.end; ++it) {
+	for (it = lprod.begin(); it != lprod.end(); ++it) {
 		pair<string, int> ps;
-		cin >>ps.first >>ps.second;
-		(*it).push_back(ps);
+		cin >> ps.first >> ps.second;
+		lprod.insert(lprod.end(),ps);
 	}
 }
 

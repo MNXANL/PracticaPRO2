@@ -21,7 +21,7 @@ private:
     string temps_ticket;
     list <pair <string, int> > lprod;
 
-    void Llegir_Productes_Client(int &mida);
+    
 
 public:
 	/*@brief Consultora per defecte de la classe Client
@@ -29,7 +29,8 @@ public:
 	*\post Retorna un client amb identificador 0, sense productes a la llista i amb temps de tiquet 0.
 	*/
 	Client();
-
+	
+	void Llegir_Productes_Client();
 	/*@brief Consultora de identificador de compra del client.
 	*\pre Cert.
 	*\post Retorna l'identificador de compra.
