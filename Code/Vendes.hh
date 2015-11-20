@@ -31,6 +31,8 @@ public:
 	*\post 
 	*/
 	void Carregar_Dades(int& mida);
+
+	string Consultar_Temps_Sec() const;
 	
 	/*@brief Operació que simula el pagament de 
 	*\pre cn > 0; cn + cr <= Caixes totals

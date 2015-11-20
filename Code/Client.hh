@@ -21,6 +21,8 @@ private:
     string temps_ticket;
     list <pair <string, int> > lprod;
 
+    void Llegir_Productes_Client(int &mida);
+
 public:
 	/*@brief Consultora per defecte de la classe Client
 	*\pre Cert
@@ -45,6 +47,12 @@ public:
 	*\post Retorna true si el client té el producte passat pel p.i.
 	*/
 	bool te_Producte_Client(string &str);
+
+	/*@brief Lectora de client.
+	*\pre Cert.
+	*\post Es llegeix un client amb un identificador, un temps de tiquet i una llista de productes, amb la seva quantitat.
+	*/
+	void Llegir_Client();
 
 };
 #endif

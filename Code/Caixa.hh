@@ -38,7 +38,7 @@ public:
 	*\pre Hi han clients a la cua WAITC.
 	*\post Retorna el temps d'espera de la cua de la caixa.
 	*/
-	int Consultar_Temps_Espera();
+	int Consultar_Temps_Espera() const;
 	
 	/*@brief Consultora de caixa oberta
 	*\pre cert
