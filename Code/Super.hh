@@ -7,8 +7,8 @@
 #include "Seccio.hh"
 #include "Vendes.hh"
 #include "Caixa.hh"
+#include "Producte.hh"
 #include <iostream>
-#include <string>
 #include <vector>
 #include <map>
 using namespace std;
@@ -19,16 +19,18 @@ private:
       @brief Representa un supermercat
       Un supermercat té 
 	*/
-	map <string, Seccio> Layout;
-	vector<Caixa> Caixes;
-	//const static string MAX_SIZE = "Z9";
-	const static int MAX_BOX = 20;
+ 
+    vector<Caixa> Caixes;
+    vector<Producte> Productes;
+    int rengles;
+    int columnes;
+    int caixes;
 
 
 public:
 	/** @brief Constructora per defecte de la classe 
-	\pre Cert
-	\post Es construeix un supermercat buit sense caixes.
+	*\pre Cert
+	*\post Es construeix un supermercat buit sense caixes.
 	*/
 	Super();
 
@@ -38,30 +40,29 @@ public:
 	seqüència òptima de camins que ha de fer el client.
 	*/
 	void Consultar_Best_Path(int &id);
-	
-	/** @brief Operació consultora de producte en el supermercat.
-	*\pre ...
-	*\post ...
-	*/
-	void Consultar_Producte(string &str);
 
 	/** @brief Operacio que afegeix productes al supermercat.
 	*\pre Entren pel p.i. productes
 	*\post Els productes s'han afegit a les seccions corresponents del supermercat.
 	*/
-	void Afegir_Productes();
-
-    /** @brief Lectura de dades del supermercat
-	*\pre Cert
-	*\post S'han llegit les dades de la mida del supermercat i les caixes, i s'han afegit un conjunt de productes al supermercat.
-	*/
-	void Llegir_Super();
-
+	void Sim_pagament(int normal, int rapida);
+	
 	/** @brief
-	*\pre El p.i. és una secció del supermercat.
-	*\post Escriu els productes que es troben a la secció del supermercat, per ordre alfabétic.
+	*\pre
+	*\post
 	*/
-    void Esc_Productes_Seccio(string &si);
-
+	void inicialitzar();  
+	
+	/** @brief
+	*\pre
+	*\post
+	*/
+	void Esc_Productes_Seccio(string &si);
+	
+	/** @brief
+	*\pre
+	*\post
+	*/
+	void Consultar_Producte(string item);
 };
 #endif

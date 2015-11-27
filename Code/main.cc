@@ -1,58 +1,72 @@
-/**
- * @mainpage Pàgina principal del Doxygen per a la pràctica de PRO2
- 
-En aquesta pràctica l'objectiu és dissenyar i simular un supermercat optimitzat, que vol
-trobar tant els recorreguts òptims per als clients com organitzar eficientment les caixes del supermercat.
-*/
-
-/** @file main.cc
-    @brief Programa principal de la practica de Programació 2.
-*/
-
 #include <iostream>
 #include <string>
-#include <Super.hh>
+#include "Super.hh"
 using namespace std;
 
-/** @brief Funció principal de la pràctica.
-*/
 int main () {
 	string str;
 	cin >>str;
 	Super s;
-		while (str != "sortir") {
-		switch(str) {
-			case "inicialitzar":
-				s.Llegir_Super();
-				s.Afegir_Productes();
-			case "carregar":
-				Vendes v;
-				int L;
-				cin >>L;
-				v.Carregar_Dades(L);
-			case "informacio":
-				string item;
-				cin >>item;
-				s.Consultar_Producte(item);
-			case "productes":
-				string si;
-				cin >>si;
-				s.Esc_Productes_Seccio(si);
-			case "millor cami":
+	bool ini, charge = false; //ERROR si NO inicialitzat o carregat
+	while (str != "sortir") {
+		if(str == "inicialitzar"){
+			s.inicialitzar();
+			ini = true;
+		}
+		else if(str == "carregar"){               
+			int L;
+			cin >> L;
+			s.Carregar_Dades(L);
+			charge = true;
+		}
+		else if(str == "informacio"){
+			string item;
+			cin >>item;
+			cout << "informacio " << item << ":" << endl;
+			s.Consultar_Producte(item);	
+			cout << endl;
+		}
+		else if(str == "productes"){
+			string si;
+			cin >>si;
+			cout << "productes " << si << ":" << endl;
+			s.Esc_Productes_Seccio(si);	 
+			cout << endl;
+		}
+		else if(str == "millor"){
+			string a;
+			cin >> a;
+			if (a == "cami") {
 				int id;
 				cin >> id;
+				cout << "millor cami << id << ":" << endl;
 				s.Consultar_Best_Path(id);
-			case "simular pagament":
-				int nbox;
-				cin >>nbox;
-				for (int i = 0; i != nbox; ++i) {
-					int tn, tr;
-					cin >>tn >>tr;
-					s.Sim_pagament(tn, tr);
-				}
-			default:
+			}
+			else{
 				cout << "error" << endl;
+				cin >> str;
+			}
 		}
+		else if(str == "simular"){
+			string a;
+			cin >> a;
+			if (a == "pagament") {
+				int nbox;
+				cin >>	nbox;
+				cout << "simular pagament:" << endl;
+					for (int i = 0; i != nbox; ++i) {
+						int CN, CR;
+						cin >> CN >> CR;
+						s.Sim_pagament(CN, CR);
+				}
+				cout << endl;
+			}
+			else {
+				cout << "error" << endl;
+				cin >> str;
+			}
+		}
+		else cout << "error" << endl;
 		cin >>str;
 	}
 }

@@ -1,25 +1,28 @@
 #include "Producte.hh"
 
 
-Producte() {
-	preu = 0;
-	temps = 0;
+Producte::Producte() {
+
 }
 
-Producte::Producte(string& n, double& m, int& t) {
-	this->n = nom;
-	this->m = preu;
-	this->n = temps;
+string Producte::Consultar_nom() {
+	return producte_id;
 }
 
-string Producte::Consultar_nom() const {
-	return nom;
-}
-
-double Producte::Consultar_preu() const {
+double Producte::Consultar_preu() {
 	return preu;
 }
 
-int Producte::Consultar_temps() const {
+string Producte::Consultar_seccio() {
+	return seccio;
+}
+int Producte::Consultar_temps()  {
 	return  temps;
+}
+
+void Producte::llegir_producte(){
+    cin >> producte_id >> preu >> seccio >> temps;
+}
+void Producte::escriure_producte(){
+    cout << producte_id << " "<< preu << " " << seccio << " " << temps << endl;
 }

@@ -20,7 +20,7 @@ private:
 public:
 	/** @brief Constructora per defecte de la classe 
 	*\pre Cert
-	*\post Crea una
+	*\post 
 	*/
 	Seccio();
 
