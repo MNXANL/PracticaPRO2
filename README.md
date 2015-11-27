@@ -1,14 +1,12 @@
 Practica PRO2 Q1 2015/2016
 --------------------------
 DEADLINES
-* [X] Empezar implementacion clases
-* * [ ] Implementar clases
-* > [ ] Super		//Miguel
-* > [ ] Seccio		//Miguel
-* > [ ] Producte	//Jaime
-* > [ ] Client		//Jaime
-* > [ ] Caixa		//Miguel
-* > [ ] Vendes		//Jaime
+* [X] Implementar clases
+* [ ] Caminos Optimos
+* [ ] Superar JP publicos
+* [ ] Diseñar JP propios
+* [ ] Makefile
+* [ ] PDF
 * [ ] Documentacion Doxygen
 
 --------------------------
