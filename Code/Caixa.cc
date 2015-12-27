@@ -1,37 +1,44 @@
 #include "Caixa.hh"
 
-Caixa::Caixa(){}
+Caixa::Caixa(){
+	sumTemps = 0;
+	cola = 0;
+}
 
 
 int Caixa::Consultar_Temps_Espera() const {
 	return sumTemps;
 }
 
-void Caixa::tipus(bool tipo){
-  es_rapid = tipo;
-}
-int Caixa::Consulta_Cola(){
-  return cola;
+void Caixa::Modificar_Caixa_Rapida(bool &tipo){
+	es_rapid = tipo;
 }
 
-void Caixa::sumar_cola(string a){
-  ++cola;
-  wait = a;
-}
-void Caixa::ini_cola(){
-  cola = 0;
+int Caixa::Consulta_Cola() const{
+	return cola;
 }
 
-string Caixa::espera(){
-  return wait;
-}
-bool Caixa::es_libre(){
-  return lliure;
-}
-bool Caixa::es_rapida(){
-  return es_rapida();
+void Caixa::Sumar_Element_Cua(string &a){
+	++cola;
+	wait = a;
 }
 
-void Caixa::libre(bool tipo){
-  lliure = tipo;
+void Caixa::Null_Cua(){ 
+	cola = 0;
+}
+
+string Caixa::Consultar_Temps_Caixa() const{
+	return wait;
+}
+
+bool Caixa::Consultar_Caixa_Oberta() const{
+	return lliure;
+}
+
+bool Caixa::Consultar_Caixa_Rapida() const{
+	return es_rapid;
+}
+
+void Caixa::Modificar_Caixa_Oberta(bool &tipo){
+	lliure = tipo;
 }

@@ -2,27 +2,28 @@
 
 
 Producte::Producte() {
-
+	preu = temps = 0;
 }
 
-string Producte::Consultar_nom() {
+string Producte::Consultar_nom() const{
 	return producte_id;
 }
 
-double Producte::Consultar_preu() {
+double Producte::Consultar_preu() const{
 	return preu;
 }
 
-string Producte::Consultar_seccio() {
+string Producte::Consultar_seccio() const{
 	return seccio;
 }
-int Producte::Consultar_temps()  {
-	return  temps;
+
+int Producte::Consultar_temps() const{
+	return temps;
 }
 
-void Producte::llegir_producte(){
-    cin >> producte_id >> preu >> seccio >> temps;
+void Producte::Llegir_Producte(){
+	cin >> producte_id >> preu >> seccio >> temps;
 }
-void Producte::escriure_producte(){
-    cout << producte_id << " "<< preu << " " << seccio << " " << temps << endl;
+void Producte::Escriure_Producte(){
+	cout << producte_id << " "<< preu << " " << seccio << " " << temps << endl;
 }
