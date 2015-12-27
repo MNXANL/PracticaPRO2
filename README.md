@@ -13,4 +13,4 @@ I don't understand anything! Where's the documentation?
 
 Made by Miguel Moreno and Jaime Arroyo for the subject "Programming 2" (PRO2) in FIB (UPC, Barcelona) on the autumn course, year 2015.
 
-Mark for this project was 8/10, that is: the code works perfectly, but it has several inconsistencies in regards to modular design and some fragments of the code aren't as efficient (both in time and space) as it could be.
+Mark for this project was 8/10, that is: the code works perfectly, but it has several inconsistencies in regards to modular design and some fragments of the code aren't as efficient (both in time and space) as they could be.
