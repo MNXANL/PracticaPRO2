@@ -1,11 +1,13 @@
 #Practica PRO2 QT 2015/2016
 How do I run it?
 
-	Download this repo using "git clone [Repo_Link]". Then, access the folder /Code and write "make". To run the program, write "./program.exe".
+	Download this repo using "git clone [Repo_Link]". Then, access the folder /Code 
+	and write "make". To run the program, write "./program.exe".
 
 I don't understand anything! Where's the documentation?
 
-	Documentation can be found on the folder DOC. It has versions on both LaTeX and HTML. Because the subject was done in catalan, it's written in said language.
+	Documentation can be found on the folder DOC. It has versions on both LaTeX and HTML.
+	Because the subject was done in catalan, it's written in said language.
 	
 --------------------------------------------------------------------------
 
