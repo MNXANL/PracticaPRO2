@@ -1,4 +1,4 @@
-
+#Practica PRO2 QT 2015/2016
 How do I run it?
 	Download this repo using "git pull <repo_link>". Then, access the folder and write "make". To run the program, write "./program.exe".
 
