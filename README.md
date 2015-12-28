@@ -6,8 +6,9 @@ How do I run it?
 
 I don't understand anything! Where's the documentation?
 
-	Documentation can be found on the folder DOC. It has versions on both LaTeX and HTML.
-	Because the subject was done in catalan, it's written in said language.
+	Documentation can be found on html.zip; alternatively, it generates documentation 
+	after compilation, on both LaTeX and HTML versions (the folder is DOC/). Because 
+	the subject was done in catalan, it's written in said language.
 	
 --------------------------------------------------------------------------
 
